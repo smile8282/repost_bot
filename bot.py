@@ -371,6 +371,9 @@ def handle_admin_message(update: Update, context: CallbackContext):
                 update.message.reply_text("Неверный формат номера. Введите номер в формате #12345.")
 
 # Основная функция
+import root_bot
+from some_module import some_function
+
 def main():
     init_db()  # Инициализация базы данных
     updater = Updater("YOUR_BOT_TOKEN", use_context=True)
